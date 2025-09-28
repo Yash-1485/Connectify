@@ -186,7 +186,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "D:\\Next_Projects\\socialapp\\generated\\prisma",
+      "value": "D:\\Connectify\\Connectify\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -200,12 +200,11 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "D:\\Next_Projects\\socialapp\\prisma\\schema.prisma",
+    "sourceFilePath": "D:\\Connectify\\Connectify\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../.env",
-    "schemaEnvPath": "../../.env"
+    "rootEnvPath": null
   },
   "relativePath": "../../prisma",
   "clientVersion": "6.16.2",

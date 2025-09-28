@@ -1,7 +1,6 @@
 "use client"
 
 import { createPost } from "@/actions/post.action";
-import { create } from "domain";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { Card, CardContent, CardHeader } from "./ui/card";
