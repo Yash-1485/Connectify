@@ -10,7 +10,7 @@ const WhomToFollow = async () => {
     const users = await getRandomUsers();
 
     return (
-        <Card>
+        <Card className="sticky top-28">
             <CardHeader>
                 <CardTitle className="text-xl font-bold truncate">
                     People you may know

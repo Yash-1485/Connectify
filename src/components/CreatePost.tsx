@@ -83,7 +83,7 @@ const CreatePost = () => {
                             variant={"ghost"}
                             size={"default"}
                             onClick={() => {
-                                setImageUpload(true);
+                                setImageUpload((prev)=>!prev);
                             }}
                         >
                             <ImageIcon className="w-4 h-4 mr-0.5" />

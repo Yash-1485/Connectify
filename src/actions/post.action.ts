@@ -28,7 +28,6 @@ export async function createPost({ content, imageUrl }: { content: string; image
 
 export async function getPosts() {
     try {
-
         const posts = await prisma.post.findMany({
             include: {
                 author: {
@@ -65,6 +64,9 @@ export async function getPosts() {
                         likes: true
                     }
                 }
+            },
+            orderBy: {
+                createdAt: "desc"
             }
         });
         return posts;

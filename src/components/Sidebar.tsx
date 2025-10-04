@@ -21,7 +21,7 @@ const Sidebar = async () => {
     if (!user) return null;
 
     return (
-        <div className='sticky top-20'>
+        <div className='sticky top-28'>
             <ProfileCard user={user} />
         </div>
     )
@@ -31,7 +31,7 @@ export default Sidebar
 
 const UnAuthorizedSidebar = () => {
     return (
-        <Card className="w-full max-w-full p-2 flex flex-col justify-center gap-3 text-center">
+        <Card className="w-full max-w-full p-2 flex flex-col justify-center gap-3 text-center sticky top-28">
             <CardHeader className='flex flex-col gap-4'>
                 <CardTitle className='text-2xl font-bold text-nowrap'>Welcome Back! 😊</CardTitle>
                 <CardDescription>

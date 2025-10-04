@@ -55,8 +55,8 @@ function NotificationsPage() {
     if (isLoading) return <NotificationsSkeleton />;
 
     return (
-        <div className="space-y-4">
-            <Card>
+        <div className="h-[550px]">
+            <Card className="relative top-0">
                 <CardHeader className="border-b">
                     <div className="flex items-center justify-between">
                         <CardTitle>Notifications</CardTitle>
@@ -104,6 +104,8 @@ function NotificationsPage() {
                                                                 src={notification.post.image}
                                                                 alt="Post content"
                                                                 className="mt-2 rounded-md w-full max-w-[200px] h-auto object-cover"
+                                                                width={50}
+                                                                height={50}
                                                             />
                                                         )}
                                                     </div>

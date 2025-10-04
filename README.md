@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Connectify — A Modern Social Media Web Application
 
-## Getting Started
+Connectify is a full-stack social media application where users can connect with others, share posts, like and comment, follow other people, and explore profiles — just like popular platforms such as Twitter and LinkedIn.
 
-First, run the development server:
+---
 
+## 🚀 Features
+
+### 👥 User Management
+- Signup, Login, and Logout functionality
+- Profile creation and editing
+- View other users’ profiles
+- Follow / Unfollow users
+- Create, Like and Comment post with images
+
+### 📝 Posts
+- Create, edit, and delete posts
+- View feed of posts from other users
+- Like and unlike posts
+- Comment on posts and view comments
+
+### ❤️ Social Interaction
+- Real-time like and comment updates
+- Follow system with followers/following count
+- Personalized user feed
+
+### 📱 UI/UX
+- Responsive and modern design using **Tailwind CSS**
+- Only the **main feed** is scrollable while sidebars remain fixed (like Twitter/LinkedIn)
+- Smooth transitions and consistent theme
+---
+
+## 🏗️ Tech Stack
+
+| Category | Technologies Used |
+|-----------|-------------------|
+| **Frontend** | React / Next.js, Tailwind CSS |
+| **Backend** | Node.js, Express / Django (depending on setup) |
+| **Authentication** | Clerk |
+| **Database Service Provider** | Neon |
+| **Database** | PostgreSQL |
+| **Images storing and uploding provider** | Uploadthing |
+| **ORM - Object Relational Mapping** | Prisma |
+| **Version Control** | Git + GitHub |
+
+---
+
+---
+
+## 📸 Screenshots  
+
+### Home Page  
+<img src="./src/assets/Connectify_1.png" alt="Home Page" width="500">
+
+### Home Page - Comments Section
+<img src="./src/assets/Connectify_2.png" alt="Listings Page" width="500">
+
+### Notifications Page
+<img src="./src/assets/Connectify_3.png" alt="Recommendation Section" width="500">
+
+### Profile Page
+<img src="./src/assets/Connectify_4.png" alt="Recommendation Section" width="500">
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Yash-1485/connectify.git
+cd connectify
+```
+### 2️⃣ Install the dependencies
+```bash
+npm install
+```
+### 3️⃣ Generate the Prisma Client
+```bash
+npx prisma generate
+```
+### 4️⃣ Start the app
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
+## Future Enhancements
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Direct messaging (DM) & group chats
+- Real-time push notifications
+- Search and explore tab
+---
