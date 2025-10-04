@@ -116,11 +116,15 @@ export async function getRandomUsers() {
   }
 }
 
+type success = {
+  success: boolean
+}
+
 export async function toggleFollow(targetUserId: string) {
   try {
     const userId = await getDbUserId();
 
-    if(!userId) return [];
+    if (!userId) return null;
 
     const existingFollow = await prisma.follows.findUnique({
       where: {
@@ -160,8 +164,9 @@ export async function toggleFollow(targetUserId: string) {
         })
       ])
     }
-    revalidatePath("/","page");
-    return { success: true }
+    revalidatePath("/", "page");
+    const successMessage: success = { success: true }
+    return successMessage;
   } catch (error) {
     console.error("Error in toggleFollow", error);
     return { success: false, message: "Error while toggling follow" }
